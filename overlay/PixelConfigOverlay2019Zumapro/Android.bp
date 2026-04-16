@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "GlanceableHubSettingsConfigOverlay",
+    name: "PixelConfigOverlay2019Zumapro",
     product_specific: true,
 }
