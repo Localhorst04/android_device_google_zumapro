@@ -456,3 +456,6 @@ include hardware/google/pixel/touch/device.mk
 
 # ZRAM writeback
 include hardware/google/pixel/mm/device_gki.mk
+
+PRODUCT_COPY_FILES += \
+    device/google/zumapro/conf/axion/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml

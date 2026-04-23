@@ -1,0 +1,3 @@
+# AxBurstEngine: DRAM min_freq boost on MIF devfreq (sysfs_fabric)
+allow system_server sysfs_fabric:dir search;
+allow system_server sysfs_fabric:file rw_file_perms;
