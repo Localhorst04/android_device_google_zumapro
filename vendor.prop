@@ -78,7 +78,7 @@ ro.vendor.gps.pps.enabled=true
 
 # Graphics
 debug.renderengine.graphite_preview_optin=true
-graphics.gpu.profiler.support=true
+graphics.gpu.profiler.support=false
 ro.egl.blobcache.multifile=true
 ro.egl.blobcache.multifile_limit=33554432
 ro.hardware.egl=mali
