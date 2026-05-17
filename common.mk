@@ -458,4 +458,8 @@ include hardware/google/pixel/touch/device.mk
 include hardware/google/pixel/mm/device_gki.mk
 
 PRODUCT_COPY_FILES += \
-    device/google/zumapro/conf/axion/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml
+    device/google/zumapro/conf/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
+    device/google/zumapro/conf/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
+    device/google/zumapro/conf/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
+    device/google/zumapro/conf/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml \
+    device/google/zumapro/conf/axion/init.axion.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.axion.rc
