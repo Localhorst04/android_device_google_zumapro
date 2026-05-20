@@ -2,6 +2,7 @@
 <perf-config>
     <atmc>
         <cpu_levels>
+            <!-- TODO: redo table and redefine values more thoughtfully -->
             <level id="1" little="0,1696" big="0,2367" prime="0,2802"/>
             <level id="2" little="0,1696" big="0,2245" prime="0,2687"/>
             <level id="3" little="0,1696" big="0,2130" prime="0,2687"/>
@@ -21,7 +22,7 @@
             <level id="17" little="0,1197" big="0,1418" prime="0,1745"/>
             <level id="18" little="0,1197" big="0,1328" prime="0,1745"/>
             <level id="19" little="0,1197" big="0,1328" prime="0,1745"/>
-            <level id="20" little="0,1098" big="0,1221" prime="0,1557"/>
+            <level id="20" little="0,1197" big="0,1328" prime="0,1557"/>
             <level id="21" little="0,1098" big="0,1221" prime="0,1557"/>
             <level id="22" little="0,1098" big="0,1221" prime="0,1557"/>
             <level id="23" little="0,955" big="0,1065" prime="0,1557"/>
@@ -46,7 +47,7 @@
         <scenes>
             <scene name="default_scene">
                 <level id="5">
-                    <action unit="cpu" status="12"/>
+                    <action unit="cpu" status="10"/>
                 </level>
                 <level id="8">
                     <action unit="cpu" status="13"/>
@@ -60,7 +61,7 @@
                     <action unit="bg_killer" status="3"/>
                 </level>
                 <level id="11">
-                    <action unit="cpu" status="19"/>
+                    <action unit="cpu" status="20"/>
                     <action unit="bg_killer" status="4"/>
                 </level>
             </scene>
