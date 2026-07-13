@@ -3,12 +3,28 @@
   <resource id="0x0001" name="cpu_down_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us" default="500" />
   <resource id="0x0002" name="cpu_down_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us" default="500" />
   <resource id="0x0003" name="cpu_down_rate_limit_c2" path="/sys/devices/system/cpu/cpu7/cpufreq/sched_pixel/down_rate_limit_us" default="500" />
-  <resource id="0x0019" name="cpu_up_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/up_rate_limit_us" default="500" />
-  <resource id="0x001a" name="cpu_up_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/up_rate_limit_us" default="500" />
-  <resource id="0x001b" name="cpu_up_rate_limit_c2" path="/sys/devices/system/cpu/cpu7/cpufreq/sched_pixel/up_rate_limit_us" default="500" />
-  <resource id="0x0004" name="cpu_dvfs_headroom" path="/proc/vendor_sched/dvfs_headroom" default="1100" />
+  <resource id="0x0019" name="cpu_up_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
+  <resource id="0x001a" name="cpu_up_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
+  <resource id="0x001b" name="cpu_up_rate_limit_c2" path="/sys/devices/system/cpu/cpu7/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
+
+  <resource id="0x001c" name="cpu_little_response_time_ms" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/response_time_ms" default="0" />
+  <resource id="0x001d" name="cpu_mid_response_time_ms" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/response_time_ms" default="0" />
+  <resource id="0x001e" name="cpu_big_response_time_ms" path="/sys/devices/system/cpu/cpu7/cpufreq/sched_pixel/response_time_ms" default="0" />
+  <resource id="0x001f" name="auto_dvfs_headroom_enable" path="/proc/vendor_sched/auto_dvfs_headroom_enable" default="0" />
+  <resource id="0x0020" name="auto_migration_margins_enable" path="/proc/vendor_sched/auto_migration_margins_enable" default="0" />
+  <resource id="0x0021" name="ta_rampup_multiplier" path="/proc/vendor_sched/groups/ta/rampup_multiplier" default="1" />
+  <resource id="0x0022" name="adpf_rampup_multiplier" path="/proc/vendor_sched/adpf_rampup_multiplier" default="1" />
+  <resource id="0x0023" name="per_task_iowait_boost_max" path="/proc/vendor_sched/per_task_iowait_boost_max_value" default="0" />
+  <resource id="0x0024" name="auto_prefer_idle" path="/proc/vendor_sched/auto_prefer_idle" default="0" />
+  <resource id="0x0025" name="cpu_uclamp_max_filter_enable" path="/proc/vendor_sched/uclamp_max_filter_enable" default="0" />
+  <resource id="0x0026" name="bg_uclamp_max" path="/proc/vendor_sched/groups/bg/uclamp_max" default="0" />
+  <resource id="0x0027" name="dex2oat_uclamp_max" path="/proc/vendor_sched/groups/dex2oat/uclamp_max" default="0" />
+  <resource id="0x0028" name="dsu_min_freq" path="/sys/devices/platform/17000090.devfreq_dsu/devfreq/17000090.devfreq_dsu/min_freq" default="0" />
+  <resource id="0x0029" name="bci_min_freq" path="/sys/devices/platform/170000a0.devfreq_bci/devfreq/170000a0.devfreq_bci/min_freq" default="0" />
+
+  <resource id="0x0004" name="cpu_dvfs_headroom" path="/proc/vendor_sched/dvfs_headroom" default="1100 1055 1055" />
   <resource id="0x0005" name="cpu_tapered_dvfs_headroom" path="/proc/vendor_sched/tapered_dvfs_headroom_enable" default="0" />
-  <resource id="0x0006" name="cpu_util_threshold" path="/proc/vendor_sched/util_threshold" default="0" />
+  <resource id="0x0006" name="cpu_util_threshold" path="/proc/vendor_sched/util_threshold" default="2048 1280 1280" />
   <resource id="0x0007" name="display_hw_early_wakeup" path="/sys/devices/platform/19470000.drmdecon/early_wakeup" default="0" />
   <resource id="0x0008" name="dram_min_freq" path="/sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq" default="0" />
   <resource id="0x0009" name="gpu_boost" path="/sys/devices/platform/1f000000.mali/hint_min_freq" default="0" />
